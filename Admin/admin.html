@@ -1,0 +1,685 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Painel administrativo da Nexus Games">
+
+    <title>Administração | Nexus Games</title>
+
+    <link rel="stylesheet" href="admin.css">
+
+    <link rel="icon" href="../img.favicon">
+
+</head>
+
+<body>
+
+    <!-- ========================================= -->
+    <!-- TELA DE LOGIN -->
+    <!-- ========================================= -->
+
+    <section id="telaLogin" class="tela-login">
+
+        <div class="login-container">
+
+            <div class="login-logo">
+                <h1>NEXUS <span>GAMES</span></h1>
+                <p>PAINEL ADMINISTRATIVO</p>
+            </div>
+
+            <div class="login-conteudo">
+
+                <h2>Bem-vindo de volta</h2>
+
+                <p class="login-descricao">
+                    Entre com suas credenciais administrativas.
+                </p>
+
+                <form id="formLogin">
+
+                    <div class="campo-login">
+
+                        <label for="usuario">
+                            Usuário
+                        </label>
+
+                        <input
+                            type="text"
+                            id="usuario"
+                            placeholder="Digite seu usuário"
+                            autocomplete="username"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="campo-login">
+
+                        <label for="senha">
+                            Senha
+                        </label>
+
+                        <input
+                            type="password"
+                            id="senha"
+                            placeholder="Digite sua senha"
+                            autocomplete="current-password"
+                            required
+                        >
+
+                    </div>
+
+                    <p
+                        id="mensagemErro"
+                        class="mensagem-erro"
+                        role="alert"
+                    ></p>
+
+                    <button type="submit" id="btnLogin">
+                        Entrar no painel
+                    </button>
+
+                </form>
+
+                <a href="../index.html" class="voltar-loja">
+                    ← Voltar para a loja
+                </a>
+
+            </div>
+
+            <div class="login-footer">
+                Nexus Link © 2026
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================================= -->
+    <!-- PAINEL ADMINISTRATIVO -->
+    <!-- ========================================= -->
+
+    <section id="painelAdmin" class="painel-admin" hidden>
+
+        <!-- MENU LATERAL -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-logo">
+
+                <h2>NEXUS <span>GAMES</span></h2>
+
+                <p>ADMINISTRAÇÃO</p>
+
+            </div>
+
+
+            <nav class="menu-admin">
+
+                <p class="menu-titulo">
+                    PRINCIPAL
+                </p>
+
+                <button
+                    class="menu-item ativo"
+                    data-secao="dashboard"
+                    type="button"
+                >
+                    <span>▦</span>
+                    Dashboard
+                </button>
+
+
+                <p class="menu-titulo">
+                    GERENCIAMENTO
+                </p>
+
+                <button
+                    class="menu-item"
+                    data-secao="jogos"
+                    type="button"
+                >
+                    <span>🎮</span>
+                    Jogos
+                </button>
+
+                <button
+                    class="menu-item"
+                    data-secao="avaliacoes"
+                    type="button"
+                >
+                    <span>☆</span>
+                    Avaliações
+                </button>
+
+
+                <p class="menu-titulo">
+                    SISTEMA
+                </p>
+
+                <button
+                    class="menu-item"
+                    data-secao="configuracoes"
+                    type="button"
+                >
+                    <span>⚙</span>
+                    Configurações
+                </button>
+
+            </nav>
+
+
+            <div class="sidebar-footer">
+
+                <a href="../index.html">
+                    ← Voltar para a loja
+                </a>
+
+                <button
+                    id="btnSair"
+                    type="button"
+                >
+                    ⇥ Sair da administração
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <!-- CONTEÚDO PRINCIPAL -->
+
+        <main class="conteudo-admin">
+
+            <!-- CABEÇALHO -->
+
+            <header class="admin-header">
+
+                <div>
+
+                    <h1 id="tituloSecao">
+                        Dashboard
+                    </h1>
+
+                    <p id="descricaoSecao">
+                        Visão geral da sua loja.
+                    </p>
+
+                </div>
+
+                <div class="admin-perfil">
+
+                    <div class="perfil-avatar">
+                        N
+                    </div>
+
+                    <div class="perfil-info">
+
+                        <strong>Administrador</strong>
+
+                        <span>Gerenciamento da loja</span>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- ================================= -->
+            <!-- DASHBOARD -->
+            <!-- ================================= -->
+
+            <section
+                id="secao-dashboard"
+                class="secao-admin ativa"
+            >
+
+                <div class="boas-vindas">
+
+                    <div>
+
+                        <h2>Bem-vindo à Nexus Games!</h2>
+
+                        <p>
+                            Gerencie os jogos e acompanhe
+                            as atividades da sua loja.
+                        </p>
+
+                    </div>
+
+                    <span class="boas-vindas-icone">
+                        🎮
+                    </span>
+
+                </div>
+
+
+                <!-- INDICADORES -->
+
+                <div class="dashboard-cards">
+
+                    <article class="dashboard-card">
+
+                        <div class="card-icone">
+                            🎮
+                        </div>
+
+                        <p>Total de jogos</p>
+
+                        <h3 id="totalJogos">
+                            0
+                        </h3>
+
+                    </article>
+
+
+                    <article class="dashboard-card">
+
+                        <div class="card-icone">
+                            ⭐
+                        </div>
+
+                        <p>Total de avaliações</p>
+
+                        <h3 id="totalAvaliacoes">
+                            0
+                        </h3>
+
+                    </article>
+
+
+                    <article class="dashboard-card">
+
+                        <div class="card-icone">
+                            🛒
+                        </div>
+
+                        <p>Jogos cadastrados</p>
+
+                        <h3 id="jogosCadastrados">
+                            0
+                        </h3>
+
+                    </article>
+
+                </div>
+
+
+                <!-- ATALHOS -->
+
+                <div class="painel-bloco">
+
+                    <div class="bloco-header">
+
+                        <div>
+
+                            <h2>Acesso rápido</h2>
+
+                            <p>
+                                Acesse as principais funcionalidades.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="atalhos-admin">
+
+                        <button
+                            class="atalho-card"
+                            data-secao="jogos"
+                            type="button"
+                        >
+
+                            <span>🎮</span>
+
+                            <strong>Gerenciar jogos</strong>
+
+                            <small>
+                                Cadastrar, editar e excluir jogos.
+                            </small>
+
+                        </button>
+
+
+                        <button
+                            class="atalho-card"
+                            data-secao="avaliacoes"
+                            type="button"
+                        >
+
+                            <span>⭐</span>
+
+                            <strong>Ver avaliações</strong>
+
+                            <small>
+                                Consultar comentários dos usuários.
+                            </small>
+
+                        </button>
+
+
+                        <button
+                            class="atalho-card"
+                            data-secao="configuracoes"
+                            type="button"
+                        >
+
+                            <span>⚙</span>
+
+                            <strong>Configurações</strong>
+
+                            <small>
+                                Gerenciar preferências administrativas.
+                            </small>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================================= -->
+            <!-- GERENCIAMENTO DE JOGOS -->
+            <!-- ================================= -->
+
+            <section
+                id="secao-jogos"
+                class="secao-admin"
+                hidden
+            >
+
+                <div class="painel-bloco">
+
+                    <div class="bloco-header">
+
+                        <div>
+
+                            <h2>Gerenciamento de jogos</h2>
+
+                            <p>
+                                Administre o catálogo da Nexus Games.
+                            </p>
+
+                        </div>
+
+                        <button
+                            id="btnNovoJogo"
+                            class="btn-principal"
+                            type="button"
+                        >
+                            + Adicionar jogo
+                        </button>
+
+                    </div>
+
+
+                    <div class="filtros-jogos">
+
+                        <input
+                            type="search"
+                            id="buscarJogo"
+                            placeholder="Buscar jogo pelo nome..."
+                        >
+
+                        <select id="filtroCategoria">
+
+                            <option value="">
+                                Todas as categorias
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="tabela-container">
+
+                        <table class="tabela-admin">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>Jogo</th>
+
+                                    <th>Categoria</th>
+
+                                    <th>Preço</th>
+
+                                    <th>Ações</th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody id="listaJogos">
+
+                                <tr>
+
+                                    <td colspan="4">
+                                        Nenhum jogo carregado.
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================================= -->
+            <!-- AVALIAÇÕES -->
+            <!-- ================================= -->
+
+            <section
+                id="secao-avaliacoes"
+                class="secao-admin"
+                hidden
+            >
+
+                <div class="painel-bloco">
+
+                    <div class="bloco-header">
+
+                        <div>
+
+                            <h2>Avaliações dos usuários</h2>
+
+                            <p>
+                                Consulte as avaliações cadastradas.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="filtros-avaliacoes">
+
+                        <input
+                            type="search"
+                            id="buscarAvaliacao"
+                            placeholder="Buscar avaliação..."
+                        >
+
+                        <select id="filtroNota">
+
+                            <option value="">
+                                Todas as notas
+                            </option>
+
+                            <option value="5">
+                                5 estrelas
+                            </option>
+
+                            <option value="4">
+                                4 estrelas
+                            </option>
+
+                            <option value="3">
+                                3 estrelas
+                            </option>
+
+                            <option value="2">
+                                2 estrelas
+                            </option>
+
+                            <option value="1">
+                                1 estrela
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div
+                        id="listaAvaliacoes"
+                        class="lista-avaliacoes"
+                    >
+
+                        <p class="estado-vazio">
+                            Nenhuma avaliação carregada.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================================= -->
+            <!-- CONFIGURAÇÕES -->
+            <!-- ================================= -->
+
+            <section
+                id="secao-configuracoes"
+                class="secao-admin"
+                hidden
+            >
+
+                <div class="painel-bloco">
+
+                    <div class="bloco-header">
+
+                        <div>
+
+                            <h2>Configurações</h2>
+
+                            <p>
+                                Informações e preferências do painel.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="configuracao-item">
+
+                        <div>
+
+                            <strong>Nome da loja</strong>
+
+                            <p>
+                                Nexus Games
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="configuracao-item">
+
+                        <div>
+
+                            <strong>Grupo responsável</strong>
+
+                            <p>
+                                Nexus Link
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="configuracao-item">
+
+                        <div>
+
+                            <strong>Armazenamento</strong>
+
+                            <p>
+                                localStorage do navegador
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="configuracao-item">
+
+                        <div>
+
+                            <strong>Versão do projeto</strong>
+
+                            <p>
+                                Demonstração administrativa
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- RODAPÉ -->
+
+            <footer class="admin-footer">
+
+                <p>
+                    Nexus Games | Nexus Link © 2026
+                </p>
+
+                <p>
+                    Sua próxima aventura começa aqui.
+                </p>
+
+            </footer>
+
+        </main>
+
+    </section>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="admin.js"></script>
+
+</body>
+
+</html>

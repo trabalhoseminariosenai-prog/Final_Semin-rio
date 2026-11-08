@@ -1,0 +1,747 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Nexus Games - Sua próxima aventura começa aqui. Explore nossa loja digital de games.">
+
+    <meta name="theme-color" content="#10141b">
+
+    <title>Nexus Games | Sua próxima aventura começa aqui</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ==========================================
+         CABEÇALHO
+    =========================================== -->
+
+    <header class="header" id="topo">
+
+        <div class="header-container">
+
+            <!-- LOGO -->
+            <a href="#inicio" class="logo" aria-label="Nexus Games - Início">
+                <span class="logo-icon">N</span>
+                <span class="logo-text">NEXUS<span>GAMES</span></span>
+            </a>
+
+            <!-- MENU DE NAVEGAÇÃO -->
+            <nav class="main-nav" aria-label="Navegação principal">
+
+                <a href="#inicio" class="nav-link active" data-page="inicio">
+                    Início
+                </a>
+
+                <a href="#catalogo" class="nav-link" data-page="catalogo">
+                    Catálogo
+                </a>
+
+                <a href="#ofertas" class="nav-link" data-page="ofertas">
+                    Ofertas
+                </a>
+
+                <a href="#suporte" class="nav-link" data-page="suporte">
+                    Suporte
+                </a>
+
+            </nav>
+
+            <!-- AÇÕES DO CABEÇALHO -->
+            <div class="header-actions">
+
+                <!-- ALTERNAR TEMA -->
+                <button
+                    type="button"
+                    class="theme-toggle"
+                    id="btnTema"
+                    aria-label="Alternar tema"
+                    title="Alternar tema">
+
+                    <span id="iconeTema">☀</span>
+
+                </button>
+
+                <!-- ABRIR CARRINHO -->
+                <button
+                    type="button"
+                    class="cart-button"
+                    id="btnAbrirCarrinho"
+                    aria-label="Abrir carrinho">
+
+                    <span class="cart-icon">🛒</span>
+
+                    <span class="cart-label">Carrinho</span>
+
+                    <span class="cart-count" id="contadorCarrinho">0</span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ==========================================
+         CONTEÚDO PRINCIPAL
+    =========================================== -->
+
+    <main id="conteudoPrincipal">
+
+
+        <!-- ======================================
+             PÁGINA INICIAL
+        ======================================= -->
+
+        <section class="page-section active" id="inicio">
+
+            <!-- BANNER PRINCIPAL -->
+            <div class="hero">
+
+                <div class="hero-overlay"></div>
+
+                <div class="hero-content">
+
+                    <span class="hero-tag">
+                        <span class="status-dot"></span>
+                        SUA LOJA DIGITAL DE GAMES
+                    </span>
+
+                    <h1>
+                        SUA PRÓXIMA
+                        <span>AVENTURA</span>
+                        COMEÇA AQUI.
+                    </h1>
+
+                    <p>
+                        Explore novos universos, descubra grandes histórias
+                        e encontre seu próximo jogo favorito na Nexus Games.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <button
+                            type="button"
+                            class="btn-primary"
+                            data-navigate="catalogo">
+
+                            Explorar catálogo
+                            <span>→</span>
+
+                        </button>
+
+                        <button
+                            type="button"
+                            class="btn-secondary"
+                            data-navigate="ofertas">
+
+                            Ver ofertas
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="hero-decoration">
+                    <span>NEXUS</span>
+                    <span>GAMES</span>
+                </div>
+
+            </div>
+
+
+            <!-- BENEFÍCIOS -->
+            <section class="benefits-section">
+
+                <div class="benefits-container">
+
+                    <article class="benefit-card">
+
+                        <span class="benefit-icon">🎮</span>
+
+                        <div>
+                            <h3>Grandes jogos</h3>
+                            <p>Descubra jogos de diversos gêneros.</p>
+                        </div>
+
+                    </article>
+
+                    <article class="benefit-card">
+
+                        <span class="benefit-icon">💳</span>
+
+                        <div>
+                            <h3>Preços transparentes</h3>
+                            <p>Consulte os preços dos jogos.</p>
+                        </div>
+
+                    </article>
+
+                    <article class="benefit-card">
+
+                        <span class="benefit-icon">🚀</span>
+
+                        <div>
+                            <h3>Sua próxima aventura</h3>
+                            <p>Encontre seu próximo jogo favorito.</p>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- CHAMADA PARA O CATÁLOGO -->
+            <section class="home-discovery">
+
+                <div class="section-heading">
+
+                    <div>
+                        <span class="section-subtitle">EXPLORE NOVOS MUNDOS</span>
+                        <h2>Encontre sua próxima aventura</h2>
+                        <p>
+                            Uma coleção de experiências esperando por você.
+                        </p>
+                    </div>
+
+                    <button
+                        type="button"
+                        class="btn-outline"
+                        data-navigate="catalogo">
+
+                        Ver catálogo completo →
+                        
+                    </button>
+
+                </div>
+
+            </section>
+
+        </section>
+
+
+        <!-- ======================================
+             CATÁLOGO DE JOGOS
+        ======================================= -->
+
+        <section class="page-section" id="catalogo" hidden>
+
+            <div class="content-container">
+
+                <div class="page-heading">
+
+                    <span class="section-subtitle">EXPLORE NOSSA COLEÇÃO</span>
+
+                    <h1>Catálogo de jogos</h1>
+
+                    <p>
+                        Descubra títulos incríveis e encontre sua próxima aventura.
+                    </p>
+
+                </div>
+
+
+                <!-- PESQUISA -->
+                <div class="catalog-toolbar">
+
+                    <div class="search-box">
+
+                        <span>⌕</span>
+
+                        <input
+                            type="search"
+                            id="pesquisaJogos"
+                            placeholder="Pesquisar jogos..."
+                            aria-label="Pesquisar jogos">
+
+                    </div>
+
+
+                    <!-- FILTRO DE CATEGORIAS -->
+                    <select
+                        id="filtroCategoria"
+                        aria-label="Filtrar por categoria">
+
+                        <option value="todos">Todas as categorias</option>
+
+                        <option value="acao">Ação</option>
+
+                        <option value="aventura">Aventura</option>
+
+                        <option value="rpg">RPG</option>
+
+                        <option value="mundo-aberto">Mundo aberto</option>
+
+                        <option value="corrida">Corrida</option>
+
+                        <option value="terror">Terror</option>
+
+                        <option value="estrategia">Estratégia</option>
+
+                        <option value="simulacao">Simulação</option>
+
+                    </select>
+
+
+                    <!-- ORDENAÇÃO -->
+                    <select
+                        id="ordenacaoJogos"
+                        aria-label="Ordenar jogos">
+
+                        <option value="padrao">Ordenação padrão</option>
+
+                        <option value="menor-preco">Menor preço</option>
+
+                        <option value="maior-preco">Maior preço</option>
+
+                        <option value="a-z">Nome: A - Z</option>
+
+                        <option value="z-a">Nome: Z - A</option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- QUANTIDADE DE JOGOS -->
+                <div class="catalog-info">
+
+                    <span id="quantidadeJogos">
+                        Jogos disponíveis
+                    </span>
+
+                </div>
+
+
+                <!-- JOGOS GERADOS PELO JAVASCRIPT -->
+                <div class="games-grid" id="listaJogos">
+
+                    <!--
+                        Os cards dos jogos serão criados
+                        dinamicamente pelo script.js.
+                    -->
+
+                </div>
+
+
+                <!-- MENSAGEM QUANDO NÃO HOUVER RESULTADOS -->
+                <div class="empty-state" id="nenhumJogo" hidden>
+
+                    <span>🎮</span>
+
+                    <h3>Nenhum jogo encontrado</h3>
+
+                    <p>
+                        Tente pesquisar por outro nome ou categoria.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+             PÁGINA DE OFERTAS
+        ======================================= -->
+
+        <section class="page-section" id="ofertas" hidden>
+
+            <div class="content-container">
+
+                <div class="page-heading">
+
+                    <span class="section-subtitle">DESCUBRA NOVOS JOGOS</span>
+
+                    <h1>Jogos em destaque</h1>
+
+                    <p>
+                        Confira os jogos selecionados para você.
+                    </p>
+
+                </div>
+
+
+                <div class="games-grid" id="listaOfertas">
+
+                    <!--
+                        Os jogos desta seção serão selecionados
+                        pelo script.js através do array de jogos.
+                    -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+             PÁGINA DE SUPORTE
+        ======================================= -->
+
+        <section class="page-section" id="suporte" hidden>
+
+            <div class="content-container">
+
+                <div class="page-heading">
+
+                    <span class="section-subtitle">ESTAMOS AQUI PARA AJUDAR</span>
+
+                    <h1>Central de suporte</h1>
+
+                    <p>
+                        Encontre informações sobre a Nexus Games.
+                    </p>
+
+                </div>
+
+
+                <div class="support-grid">
+
+                    <article class="support-card">
+
+                        <span class="support-icon">❓</span>
+
+                        <h3>Dúvidas frequentes</h3>
+
+                        <p>
+                            Consulte informações sobre a navegação
+                            e as funcionalidades da nossa loja.
+                        </p>
+
+                    </article>
+
+
+                    <article class="support-card">
+
+                        <span class="support-icon">🛒</span>
+
+                        <h3>Carrinho de compras</h3>
+
+                        <p>
+                            Saiba como adicionar, remover e
+                            visualizar os jogos selecionados.
+                        </p>
+
+                    </article>
+
+
+                    <article class="support-card">
+
+                        <span class="support-icon">📩</span>
+
+                        <h3>Contato</h3>
+
+                        <p>
+                            Entre em contato com nossa equipe
+                            para esclarecer suas dúvidas.
+                        </p>
+
+                    </article>
+
+                </div>
+
+
+                <!-- AVISO DO PROJETO -->
+                <div class="support-notice">
+
+                    <h3>Sobre a Nexus Games</h3>
+
+                    <p>
+                        A Nexus Games é um projeto demonstrativo
+                        de uma loja digital de jogos, desenvolvido
+                        para apresentar uma experiência de navegação
+                        e compra simulada.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==========================================
+         FUNDO ESCURO DO CARRINHO
+    =========================================== -->
+
+    <div
+        class="cart-overlay"
+        id="cartOverlay"
+        aria-hidden="true">
+    </div>
+
+
+    <!-- ==========================================
+         GAVETA LATERAL DO CARRINHO
+    =========================================== -->
+
+    <aside
+        class="cart-drawer"
+        id="cartDrawer"
+        aria-label="Carrinho de compras"
+        aria-hidden="true">
+
+        <div class="cart-header">
+
+            <div>
+
+                <span class="section-subtitle">SUA SELEÇÃO</span>
+
+                <h2>Meu carrinho</h2>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="close-cart"
+                id="btnFecharCarrinho"
+                aria-label="Fechar carrinho">
+
+                ✕
+
+            </button>
+
+        </div>
+
+
+        <!-- ITENS DO CARRINHO -->
+        <div class="cart-items" id="itensCarrinho">
+
+            <!--
+                Os produtos adicionados serão
+                exibidos dinamicamente pelo script.js.
+            -->
+
+            <div class="cart-empty" id="carrinhoVazio">
+
+                <span>🛒</span>
+
+                <h3>Seu carrinho está vazio</h3>
+
+                <p>
+                    Explore nosso catálogo e adicione
+                    seus jogos favoritos.
+                </p>
+
+                <button
+                    type="button"
+                    class="btn-primary"
+                    data-navigate="catalogo">
+
+                    Explorar catálogo
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- RODAPÉ DO CARRINHO -->
+        <div class="cart-footer">
+
+            <div class="cart-subtotal">
+
+                <span>Total</span>
+
+                <strong id="valorTotalCarrinho">
+                    R$ 0,00
+                </strong>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="checkout-button"
+                id="btnFinalizarCompra"
+                disabled>
+
+                Finalizar compra
+
+            </button>
+
+
+            <p class="cart-disclaimer">
+                Compra demonstrativa. Nenhum pagamento real será realizado.
+            </p>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ==========================================
+         MODAL DE FINALIZAÇÃO DA COMPRA
+    =========================================== -->
+
+    <div
+        class="modal-overlay"
+        id="modalCompra"
+        aria-hidden="true">
+
+        <div
+            class="modal-content"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="tituloModalCompra">
+
+            <button
+                type="button"
+                class="modal-close"
+                id="btnFecharModal"
+                aria-label="Fechar janela">
+
+                ✕
+
+            </button>
+
+
+            <div class="modal-icon">
+                ✓
+            </div>
+
+
+            <h2 id="tituloModalCompra">
+                Compra demonstrativa
+            </h2>
+
+
+            <p>
+                Esta é uma simulação de compra da Nexus Games.
+                Nenhum pagamento real será processado.
+            </p>
+
+
+            <div class="purchase-summary">
+
+                <span>Total da compra</span>
+
+                <strong id="totalCompraModal">
+                    R$ 0,00
+                </strong>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="btn-primary"
+                id="btnConfirmarCompra">
+
+                Confirmar simulação
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ==========================================
+         RODAPÉ
+    =========================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+
+            <!-- IDENTIDADE -->
+            <div class="footer-brand">
+
+                <a href="#inicio" class="logo">
+
+                    <span class="logo-icon">N</span>
+
+                    <span class="logo-text">
+                        NEXUS<span>GAMES</span>
+                    </span>
+
+                </a>
+
+                <p>
+                    Sua próxima aventura começa aqui.
+                </p>
+
+            </div>
+
+
+            <!-- NAVEGAÇÃO -->
+            <div class="footer-column">
+
+                <h3>Navegação</h3>
+
+                <a href="#inicio">Início</a>
+
+                <a href="#catalogo">Catálogo</a>
+
+                <a href="#ofertas">Ofertas</a>
+
+                <a href="#suporte">Suporte</a>
+
+            </div>
+
+
+            <!-- INFORMAÇÕES -->
+            <div class="footer-column">
+
+                <h3>Sobre</h3>
+
+                <a href="#suporte">Sobre a Nexus Games</a>
+
+                <a href="#suporte">Central de suporte</a>
+
+            </div>
+
+
+            <!-- ADMINISTRAÇÃO -->
+            <div class="footer-column footer-admin">
+
+                <h3>Área restrita</h3>
+
+                <a href="Admin/admin.html">
+                    Acesso administrativo
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- COPYRIGHT -->
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Nexus Games. Todos os direitos reservados.
+            </p>
+
+            <span>
+                Desenvolvido por Nexus Link.
+            </span>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
