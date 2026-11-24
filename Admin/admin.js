@@ -8,7 +8,7 @@
    1. CREDENCIAIS ADMINISTRATIVAS
    ===================================================== */
 
-const USUARIO_ADMIN = "nexusteste";
+const USUARIO_ADMIN = "nexusadmin";
 const SENHA_ADMIN = "22102009";
 
 
