@@ -18,7 +18,7 @@ const jogos = [
         preco: 149.90,
         categorias: ["Ação", "Mundo Aberto"],
         descricao: "Explore Los Santos e viva aventuras em um mundo aberto.",
-        imagem: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3240220/header.jpg",
+        imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbQ52g299LFIK3YcQyFC0UacojXHUWVMQMB_-Ua8bV4w&s=10",
         destaque: true,
         steam: true
     },
@@ -29,7 +29,7 @@ const jogos = [
         preco: 299.90,
         categorias: ["Ação", "Aventura", "Mundo Aberto"],
         descricao: "Uma aventura épica no Velho Oeste americano.",
-        imagem: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/header.jpg",
+        imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAnwawClO1adHCZjeWABPWUsZ5CCvwRPoR32X8Rzwkbg&s=10",
         destaque: true,
         steam: true
     },
