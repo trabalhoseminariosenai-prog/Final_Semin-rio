@@ -80,7 +80,7 @@ const jogos = [
 
     {
         id: 7,
-        nome: "Resident Evil 4",
+        nome: "Resident Evil 4 VR",
         preco: 169.00,
         categorias: ["Terror", "Ação", "Aventura"],
         descricao: "Enfrente criaturas assustadoras nesta experiência de sobrevivência.",
