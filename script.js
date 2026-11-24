@@ -40,7 +40,7 @@ const jogos = [
         preco: 199.90,
         categorias: ["RPG", "Ação", "Mundo Aberto"],
         descricao: "Explore Night City em uma aventura futurista.",
-        imagem: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/header.jpg",
+        imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRekeDpwU7xCiO947psRwjCU3Xy0b6WLluSDmkAeOiU5Q&s=10",
         destaque: true,
         steam: true
     },
@@ -51,7 +51,7 @@ const jogos = [
         preco: 229.90,
         categorias: ["RPG", "Ação", "Aventura"],
         descricao: "Explore um vasto mundo de fantasia e desafios.",
-        imagem: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/header.jpg",
+        imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCQeHYIgFpxYo8efAk3z9dcwkSKEtEoXxbIwQNICRUmQ&s=10",
         destaque: true,
         steam: true
     },
@@ -62,7 +62,7 @@ const jogos = [
         preco: 249.99,
         categorias: ["RPG", "Aventura"],
         descricao: "Descubra o mundo mágico de Hogwarts.",
-        imagem: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/990080/header.jpg",
+        imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa0UMCHRV9vfrkQWVmUmg0KoIcVVURzAb1YZ-zyAu_4w&s=10",
         destaque: true,
         steam: true
     },
@@ -73,7 +73,7 @@ const jogos = [
         preco: 249.00,
         categorias: ["Corrida", "Mundo Aberto"],
         descricao: "Corra pelas paisagens incríveis do México.",
-        imagem: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1551360/header.jpg",
+        imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlWWRfuC3LlvuSMRtWiRD9SpmftpcB2T6ok2pnsElk9Q&s=10",
         destaque: true,
         steam: true
     },
@@ -84,7 +84,7 @@ const jogos = [
         preco: 169.00,
         categorias: ["Terror", "Ação", "Aventura"],
         descricao: "Enfrente criaturas assustadoras nesta experiência de sobrevivência.",
-        imagem: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2050650/header.jpg",
+        imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0uO46i7A31VkWT7ulJZiktl-OV_jHuDS1Uz8REPX2hw&s",
         destaque: false,
         steam: true
     },
@@ -95,7 +95,7 @@ const jogos = [
         preco: 199.90,
         categorias: ["Ação", "Aventura"],
         descricao: "Acompanhe Kratos e Atreus em uma jornada épica.",
-        imagem: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1593500/header.jpg",
+        imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYGZvs2rnqJGNEgYlldc-YMSLTwsPwplDbf5-QHQt1pQ&s=10",
         destaque: true,
         steam: true
     },
@@ -106,7 +106,7 @@ const jogos = [
         preco: 249.90,
         categorias: ["Ação", "Aventura", "Mundo Aberto"],
         descricao: "Proteja Nova York como o Homem-Aranha.",
-        imagem: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1817070/header.jpg",
+        imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlMB1QpOvAC2swWgVdmE903kjgRbp_XlQkyryzGT4tkg&s=10",
         destaque: true,
         steam: true
     },
@@ -117,7 +117,7 @@ const jogos = [
         preco: 129.99,
         categorias: ["RPG", "Aventura", "Mundo Aberto"],
         descricao: "Viva uma grande aventura na pele de Geralt de Rívia.",
-        imagem: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/header.jpg",
+        imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGLG-y4iqS-7x6ihJIzIxs_WgGi1Cv3wQQ9ZewvQzKKg&s=10",
         destaque: false,
         steam: true
     },
@@ -128,7 +128,7 @@ const jogos = [
         preco: 299.90,
         categorias: ["Esportes", "Simulação"],
         descricao: "Entre em campo e dispute grandes partidas de futebol.",
-        imagem: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3405690/header.jpg",
+        imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNU3OS-fMf5LrQHNH4HziOklg8PzoT92Xj-bXz9vCGpg&s=10",
         destaque: true,
         steam: true
     },
@@ -139,7 +139,7 @@ const jogos = [
         preco: 199.99,
         categorias: ["RPG", "Estratégia", "Aventura"],
         descricao: "Uma aventura de fantasia com escolhas e consequências.",
-        imagem: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/header.jpg",
+        imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCMo5cWkMZhlPHRTRt_eHiELlXnp5I-PEudjqn8utNQQ&s=10",
         destaque: true,
         steam: true
     },
@@ -150,7 +150,7 @@ const jogos = [
         preco: null,
         categorias: ["Aventura", "Simulação"],
         descricao: "Construa, explore e sobreviva em mundos de blocos.",
-        imagem: "https://placehold.co/460x215/1c2633/ffffff?text=Minecraft",
+        imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbQDRdHxT7QJqIDlNU9RmcuyyW7TIE5AymCgTE6szgRA&s=10",
         destaque: false,
         steam: false
     },
@@ -161,7 +161,7 @@ const jogos = [
         preco: 59.99,
         categorias: ["Ação", "Aventura"],
         descricao: "Explore um reino desconhecido em uma aventura desafiadora.",
-        imagem: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1030300/header.jpg",
+        imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTureDEsNsBZ7v3Wjf1vPzbjFA4JkO9RUqHrWss2xs95A&s=10",
         destaque: true,
         steam: true
     },
@@ -172,7 +172,7 @@ const jogos = [
         preco: 19.99,
         categorias: ["Aventura", "Mundo Aberto"],
         descricao: "Explore, construa e enfrente perigos em um mundo 2D.",
-        imagem: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/header.jpg",
+        imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnQursKRrHWDTLKU-7QOfqRHA-wz2jrbzvAjQC1D0fIA&s=10",
         destaque: false,
         steam: true
     },
@@ -183,7 +183,7 @@ const jogos = [
         preco: 24.99,
         categorias: ["Simulação", "RPG"],
         descricao: "Construa sua fazenda e viva uma nova vida no campo.",
-        imagem: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/header.jpg",
+        imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1dsOGnbVSFNaBJIGKLwi7l-0RmQ7nf3no5eCRD1H4mA&s=10",
         destaque: false,
         steam: true
     },
@@ -194,7 +194,7 @@ const jogos = [
         preco: 0,
         categorias: ["Ação", "Tiro"],
         descricao: "Enfrente adversários em partidas competitivas.",
-        imagem: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/header.jpg",
+        imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQdrEzMylpwRYsyYoX4pgajqE-MseF04gNGduv81drMQ&s=10",
         destaque: true,
         steam: true
     },
@@ -205,7 +205,7 @@ const jogos = [
         preco: null,
         categorias: ["Ação", "Tiro"],
         descricao: "Dispute partidas táticas com agentes e habilidades.",
-        imagem: "https://placehold.co/460x215/1c2633/ffffff?text=VALORANT",
+        imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXZCk6ieA2qdgwo_rS3tPudddzkQUO_QGNglhw1bW2xQ&s=10",
         destaque: false,
         steam: false
     },
@@ -216,7 +216,7 @@ const jogos = [
         preco: 0,
         categorias: ["Ação", "Tiro"],
         descricao: "Sobreviva e seja o último jogador em pé.",
-        imagem: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/578080/header.jpg",
+        imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6-t6FAP59nbMHpeKaNk9wEIa_vfrfaQ-4QJ5lCeUYmQ&s=10",
         destaque: true,
         steam: true
     },
@@ -227,7 +227,7 @@ const jogos = [
         preco: null,
         categorias: ["Esportes", "Corrida"],
         descricao: "Misture futebol e carros em partidas eletrizantes.",
-        imagem: "https://placehold.co/460x215/1c2633/ffffff?text=Rocket+League",
+        imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjeljaeef2lOqOef0nUs2VjJh7O-KmFtjiay4m6udC8g&s=10",
         destaque: false,
         steam: false
     }
